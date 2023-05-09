@@ -8,6 +8,7 @@ public class Interactable : MonoBehaviour
     [SerializeField] protected TextMeshProUGUI _hintText;
     [SerializeField] protected float _timer = 0.2f;
     [SerializeField] protected GameObject[] _interactedBy;
+    [SerializeField] protected Lights lights;
 
     protected float _t;
 
