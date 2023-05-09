@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: e387ea24c5e82d647b4bdd3fac1749cf, type: 2}
+--- !u!1 &86360079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 86360079, guid: b2df11a03c381fb48aba0c4dfc91fb94, type: 3}
+  m_PrefabInstance: {fileID: 8489140604350766276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &113869711 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8489140604379701067, guid: b2df11a03c381fb48aba0c4dfc91fb94, type: 3}
@@ -1105,7 +1110,7 @@ PrefabInstance:
     - target: {fileID: 3839390389724957501, guid: afc0cadf45f717b469be2939c6996de6, type: 3}
       propertyPath: g_darkness
       value: 
-      objectReference: {fileID: 113869711}
+      objectReference: {fileID: 86360079}
     - target: {fileID: 3839390389724957634, guid: afc0cadf45f717b469be2939c6996de6, type: 3}
       propertyPath: m_Name
       value: Ozzie

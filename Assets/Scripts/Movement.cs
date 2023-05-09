@@ -154,6 +154,7 @@ public class Movement : MonoBehaviour
         {
             c_rb.mass = 50;
             c_rb.velocity = Vector3.zero;
+            g_darkness.SetActive(false);
         }
     }
 

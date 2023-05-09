@@ -12,10 +12,6 @@ public class Darkness : MonoBehaviour
 
     #endregion
 
-    #region Variables
-
-    #endregion
-
     #region UnityFunctions
 
     private void Awake()
@@ -33,19 +29,21 @@ public class Darkness : MonoBehaviour
 
     #region Collisions && Triggers
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if(other.transform.name == "Matilda")
+        Movement player = other.transform.GetComponent<Movement>();
+        if (player != null)
         {
-            other.gameObject.GetComponent<Movement>()._isDark = true;
+            player._isDark = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.transform.name == "Matilda")
+        Movement player = other.transform.GetComponent<Movement>();
+        if (player != null)
         {
-            other.gameObject.GetComponent<Movement>()._isDark = false;
+            player._isDark = false;
         }
     }
 
